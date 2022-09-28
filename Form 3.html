@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title> DEF Hotel Reservation </title>
+
+    <link rel = "icon" type = "image/x-icon" href = "./Assests/4-removebg-preview.png"> 
+	
+	<meta name = "Author" content = "Jon Marc Jackson"> </meta>
+
+	<meta name = "Keywords" content = "HTML, tables, absolute"/> 
+
+	<meta charset = "UTF - 8"/>
+
+	<meta name = "viewport" content = "width=device-width initial scale = 1"/>
+
+        <style>
+
+            fieldset
+            {
+                width:50%;
+            }
+
+            .button 
+            {
+                border: none;
+                color: white;
+                padding: 6px 10px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 1px 1px;
+                transition-duration: 0.4s;
+                cursor: pointer;
+            }
+
+            .button1 
+            {
+                background-color: white; 
+                color: black; 
+                border: 2px solid black;
+            }
+
+            .button1:hover 
+            {
+                background-color: black;
+                color: white;
+            }
+
+
+		fieldset
+            {
+ 			background-color: #eeeeee;
+		}
+
+		input 
+            {
+ 			margin: 5px;
+		}
+
+		body
+		{
+			font-size: 150%;
+		}
+
+        </style>
+</head>
+
+<body>
+
+
+<h1>Login</h1>
+<section>
+
+
+
+    <div id="reg-form" >
+
+        <form action="" method="" >
+
+            <fieldset style="width:35%;">
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" pattern=".+gmail.com" placeholder="abc@gmail.com" required>
+
+                <br>
+
+                <label for="pwd">Password:</label><br>
+                <input type="password" id="pwd" name="pwd" minlength="8"><br><br>
+
+                <button class="button button1">Login</button>
+
+
+                <input type="checkbox" id="reme" name="reme" value="Rember-Me">
+  				<label for="Remember-Me"> Remember Me</label><br>
+
+                <p><a href="https://www.w3schools.com">Lost your password?</a></p>
+
+            </fieldset>
+          
+    
+            
+
+        </form>
+
+    </div>
+
+</section>
+
+<h1 style="margin-left: 1000px;margin-right: -100px; margin-top:-370px;">Register</h1>
+
+<section style="margin-left: 1000px;margin-right: -100px; margin-top:-10px; width:50%;">
+
+    
+    
+        <div id="reg-form" >
+    
+            <form action="" method="" >
+    
+                <fieldset>
+
+                    <label for="phone">Phone Number:</label><br>
+                    <input type="tel" id="phone" name="phone" placeholder="012-345-6789" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br><br>
+
+			        <label for="first-name">First Name: </label><br>
+			        <input type="text" name="first-name" place holder="Jonmarc" required></input> 
+            
+                   
+
+			        <label for="last-name" style="margin-top: -100px;">Last Name: </label><br>
+			        <input type="text" name="last-name" place holder="Jackson" required></input><br><br>
+
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" pattern=".+gmail.com" placeholder="abc@gmail.com" required><br><br>
+
+                    <label for="pwd">Password:</label><br>
+                    <input type="password" id="pwd" name="pwd" minlength="8"><br><br>
+
+                    <button type="button" disabled>Register!</button>
+    
+
+                </fieldset>
+    
+            </form>
+    
+        </div>
+    
+    </section>
+
+</body>
+
+</html>

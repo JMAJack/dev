@@ -1,0 +1,183 @@
+<!Doctype html>
+<html>
+<head>    
+	<title> ABC Hotel Reservation </title>
+
+    <link rel = "icon" type = "image/x-icon" href = "./Assests/4-removebg-preview.png"> 
+	
+	<meta name = "Author" content = "Jon Marc Jackson"> </meta>
+
+	<meta name = "Keywords" content = "HTML, tables, absolute"/> 
+
+	<meta charset = "UTF - 8"/>
+
+	<meta name = "viewport" content = "width=device-width initial scale = 1"/>
+
+
+    <style>
+
+        label
+        {
+            border: 1px solid black; 
+            background-color: burlywood;
+        }
+
+        h1.solid 
+        {
+            border-style: solid;
+        }
+
+        body
+        {
+            font-size: 110%;
+        }
+
+        input 
+            {
+ 				margin: 5px;
+                width: 160px;
+			}
+
+    </style>
+</head>
+
+
+<body> 
+
+<center>
+
+    <h1 class="solid">Samurai Hotel</h1>
+
+</center>
+
+
+ <section id="section2">
+		<h1>Guest Information</h1>
+
+     
+
+		<div id="reg-form" >
+
+			<form action="" method="" > 
+
+                <div> 
+
+			        <label for="first-name" style=" border:1px solid black; background-color: burlywood;">First Name: </label>
+			        <input type="text" name="first-name" place holder="Jonmarc" required></input> 
+            
+                    <br>
+
+			        <label for="last-name">Last Name: </label>
+			        <input type="text" name="last-name" place holder="Jackson" required></input>
+            
+                    <br><br>
+
+                </div>
+
+                    <div>
+
+                        <label for="address-1">Address 1: </label>
+                        <input type="text" name="address-1" place holder="Address 1" required></input> <br>
+
+                        <label for="address-2">Address 2: </label>
+                        <input type="text" name="address-2" place holder="Address 2" required></input> <br>
+
+                        <label for="city">City: </label>
+                        <input type="text" name="city" place holder="city" required></input> <br>
+
+                        <label for="state">State: </label>
+                        <input type="text" name="state" place holder="state" required></input> <br>
+
+                        <label for="zip">Zip: </label>
+                        <input type="text" name="zip" place holder="zip" required></input> <br><br>
+    
+                     
+
+                    </div>
+
+
+                        <div>
+
+                            <label for="phone">Phone Number:</label>
+                            <input type="tel" id="phone" name="phone" placeholder="012-345-6789" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br>
+
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" pattern=".+gmail.com" placeholder="abc@gmail.com">
+
+
+                        </div>
+
+			
+			            
+
+
+			</form>				
+
+		</div>
+
+   </section>
+
+
+    <section id="section2" style="margin-left: 800px;margin-right: 500px; margin-top: -330px; width: 100%">
+
+        <h1>Room Information</h1>
+
+        <div id="reg-form">
+
+			<form action="" method=""> 
+
+                <div>
+
+                    <label for="quantity">Number of Adults:</label>
+                    <input type="number" id="Adults" name="Adults" min="1" max="5">
+
+                    <br>
+
+                    <label for="quantity">Number of children:</label>
+                    <input type="number" id="children" name="children" min="1" max="5">
+
+                </div>
+
+                <br>
+
+                <div>
+
+                    <label for="room-type">Room type:</label>
+                    <select name="room-type" id="room-type" style="font-size: 18px; font-family: 'Times New Roman', Times, serif;">
+                    <option value="Standard">Standard</option>
+                    <option value="Royalty">Royalty</option>
+                    <option value="Top G">Top G</option>
+                    </select>
+
+                </div>
+
+                <br>
+
+                <div>
+
+                    <label for="birthdaytime">Check in (date and time):</label>
+                    <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+                    
+                    <br>  
+                    
+                    <label for="birthdaytime">Check Out (date and time):</label>
+                    <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+
+
+                </div>
+
+                <br>
+
+                <div>
+
+                    <label for="Special-Instruction">Special-Instruction:</label> <br>
+                    <textarea name="Special-Instruction" id="specintruc" cols="50" rows="10"></textarea>
+
+                </div>
+<button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>
